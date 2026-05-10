@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAVITHA PANNALA | Teaching Portfolio</title>
+<title>Kavitha Pannala | Teaching Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -26,19 +26,20 @@
   /* NAV */
   nav {
     position: fixed; top: 0; width: 100%; z-index: 100;
-    background: var(--navy);
+    background-color: #0f2b4c;
+    background: #0f2b4c;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 3rem; height: 64px;
+    padding: 0 2rem; height: 64px;
     border-bottom: 2px solid var(--accent);
   }
   .nav-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem; color: var(--white); letter-spacing: 0.04em;
+    font-size: 1rem; color: #ffffff; letter-spacing: 0.04em; white-space: nowrap;
   }
   .nav-links { display: flex; gap: 0; }
   .nav-links a {
-    color: rgba(255,255,255,0.75); text-decoration: none;
-    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.92); text-decoration: none;
+    font-size: 0.92rem; font-weight: 600; letter-spacing: 0.1em;
     text-transform: uppercase; padding: 0 1.1rem; line-height: 64px;
     transition: color 0.2s, background 0.2s;
   }
@@ -48,33 +49,31 @@
   /* HERO */
   .hero {
     min-height: 100vh;
-    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
+    background-color: #0f2b4c !important;
+    background: #0f2b4c !important;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; padding: 7rem 2rem 4rem;
     position: relative; overflow: hidden;
   }
-  .hero::before {
-    content: ''; position: absolute; inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  }
+  .hero::before { display: none; }
   .hero-tag {
-    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: 1.2rem;
+    font-size: 0.88rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #c8a96e; margin-bottom: 1.2rem;
     display: flex; align-items: center; gap: 0.6rem;
   }
-  .hero-tag::before, .hero-tag::after { content: ''; display: block; width: 32px; height: 1px; background: var(--accent); }
+  .hero-tag::before, .hero-tag::after { content: ''; display: block; width: 32px; height: 1px; background: #c8a96e; }
   .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.8rem, 6vw, 4.5rem); color: var(--white);
-    line-height: 1.1; margin-bottom: 0.5rem;
+    font-size: clamp(3.8rem, 8vw, 6.2rem); color: #ffffff;
+    line-height: 1.1; margin-bottom: 0.6rem;
   }
   .hero-sub {
-    font-size: 1.1rem; color: rgba(255,255,255,0.6); margin-bottom: 2.4rem;
+    font-size: 1.35rem; color: #ffffff; margin-bottom: 2.4rem;
     font-weight: 300; letter-spacing: 0.04em;
   }
   .hero-desc {
-    max-width: 560px; font-size: 1.05rem; color: rgba(255,255,255,0.82);
-    line-height: 1.75; margin-bottom: 2.8rem; font-weight: 300;
+    max-width: 580px; font-size: 1.25rem; color: #e8edf2;
+    line-height: 1.8; margin-bottom: 2.8rem; font-weight: 300;
   }
   .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
   .btn-primary {
@@ -95,24 +94,24 @@
 
   /* SECTIONS */
   section { padding: 5.5rem 2rem; }
-  section:nth-child(even) { background: var(--off-white); }
+  section:not(.hero):nth-child(even) { background: var(--off-white); }
   .container { max-width: 900px; margin: 0 auto; }
   .section-label {
-    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em;
+    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.22em;
     text-transform: uppercase; color: var(--accent);
     display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;
   }
   .section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--accent); }
   h2 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.9rem, 3.5vw, 2.6rem); color: var(--navy);
+    font-size: clamp(2.5rem, 4.5vw, 3.5rem); color: var(--navy);
     margin-bottom: 1.4rem; line-height: 1.2;
   }
   .lead {
-    font-size: 1.08rem; color: var(--text-mid); line-height: 1.8;
+    font-size: 1.25rem; color: var(--text-mid); line-height: 1.85;
     margin-bottom: 1.6rem; font-weight: 300;
   }
-  p { font-size: 1rem; color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; }
+  p { font-size: 1.18rem; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.1rem; }
 
   /* DIVIDER */
   .divider { width: 48px; height: 2px; background: var(--accent); margin-bottom: 2rem; }
@@ -123,20 +122,20 @@
     background: var(--white); border: 1px solid var(--border);
     padding: 1.5rem 1.4rem; border-top: 3px solid var(--navy);
   }
-  .trait-card h4 { font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; letter-spacing: 0.02em; }
-  .trait-card p { font-size: 0.9rem; margin: 0; line-height: 1.6; }
+  .trait-card h4 { font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; letter-spacing: 0.02em; }
+  .trait-card p { font-size: 1.08rem; margin: 0; line-height: 1.6; }
 
   /* PHILOSOPHY BELIEFS */
   .belief-list { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 2rem; }
   .belief-item { display: flex; gap: 1.4rem; align-items: flex-start; padding: 1.4rem 1.6rem; background: var(--white); border-left: 3px solid var(--accent); }
-  .belief-num { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--accent); line-height: 1; min-width: 28px; }
-  .belief-item h4 { font-size: 0.95rem; font-weight: 600; color: var(--navy); margin-bottom: 0.3rem; }
-  .belief-item p { font-size: 0.92rem; margin: 0; line-height: 1.7; }
+  .belief-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--accent); line-height: 1; min-width: 28px; }
+  .belief-item h4 { font-size: 1.15rem; font-weight: 600; color: var(--navy); margin-bottom: 0.3rem; }
+  .belief-item p { font-size: 1.12rem; margin: 0; line-height: 1.7; }
 
   /* CLASSROOM PLANNING TABS */
   .cp-nav { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 2rem; overflow-x: auto; }
   .cp-tab {
-    padding: 0.75rem 1.4rem; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em;
+    padding: 0.75rem 1.4rem; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.06em;
     text-transform: uppercase; cursor: pointer; color: var(--text-muted);
     border-bottom: 2px solid transparent; margin-bottom: -2px; white-space: nowrap;
     transition: color 0.2s, border-color 0.2s; background: none; border-top: none; border-left: none; border-right: none;
@@ -145,16 +144,16 @@
   .cp-tab.active { color: var(--navy); border-bottom-color: var(--navy); }
   .cp-panel { display: none; }
   .cp-panel.active { display: block; }
-  .cp-panel h3 { font-size: 1.1rem; color: var(--navy); margin: 1.6rem 0 0.6rem; font-weight: 600; }
+  .cp-panel h3 { font-size: 1.3rem; color: var(--navy); margin: 1.6rem 0 0.6rem; font-weight: 600; }
   .cp-panel h3:first-child { margin-top: 0; }
   .cp-panel ul { padding-left: 1.4rem; margin-bottom: 1rem; }
-  .cp-panel ul li { font-size: 0.95rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 0.3rem; }
+  .cp-panel ul li { font-size: 1.14rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 0.3rem; }
 
   /* WALL ITEMS */
   .wall-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
   .wall-item { background: var(--navy); color: var(--white); padding: 1.2rem 1.3rem; }
-  .wall-item strong { display: block; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 0.4rem; }
-  .wall-item span { font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
+  .wall-item strong { display: block; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 0.4rem; }
+  .wall-item span { font-size: 1.08rem; color: rgba(255,255,255,0.8); line-height: 1.6; }
 
   /* PORTFOLIO */
   .portfolio-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem; margin-top: 2rem; }
@@ -165,8 +164,8 @@
   }
   .portfolio-card:hover { border-color: var(--navy); box-shadow: 0 4px 20px rgba(15,43,76,0.1); }
   .portfolio-card .card-icon { font-size: 1.8rem; margin-bottom: 1rem; }
-  .portfolio-card h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
-  .portfolio-card p { font-size: 0.92rem; line-height: 1.65; flex: 1; }
+  .portfolio-card h3 { font-size: 1.2rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
+  .portfolio-card p { font-size: 1.12rem; line-height: 1.65; flex: 1; }
   .portfolio-card .card-tag {
     display: inline-flex; align-items: center; gap: 0.5rem;
     margin-top: 1.2rem; font-size: 0.72rem; font-weight: 600;
@@ -194,7 +193,7 @@
     padding: 0.9rem 1.4rem; border-bottom: 1px solid var(--border);
     background: var(--navy);
   }
-  .pdf-modal-header span { color: var(--white); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.04em; }
+  .pdf-modal-header span { color: var(--white); font-size: 1rem; font-weight: 600; letter-spacing: 0.04em; }
   .pdf-modal-actions { display: flex; align-items: center; gap: 0.6rem; }
   .pdf-modal-actions a, .pdf-modal-close {
     font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
@@ -213,28 +212,31 @@
     border-top: 3px solid var(--navy-light);
     display: flex; flex-direction: column; gap: 0.4rem;
   }
-  .resource-card a { font-size: 1rem; font-weight: 600; color: var(--navy); text-decoration: none; }
+  .resource-card a { font-size: 1.2rem; font-weight: 600; color: var(--navy); text-decoration: none; }
   .resource-card a:hover { text-decoration: underline; }
-  .resource-card .resource-url { font-size: 0.78rem; color: var(--accent); letter-spacing: 0.04em; }
-  .resource-card p { font-size: 0.9rem; margin: 0; }
+  .resource-card .resource-url { font-size: 0.9rem; color: var(--accent); letter-spacing: 0.04em; }
+  .resource-card p { font-size: 1.08rem; margin: 0; }
 
   /* RESUME */
   .resume-block { margin-bottom: 2.4rem; }
-  .resume-block h3 { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+  .resume-block h3 { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
   .resume-entry { margin-bottom: 1.4rem; }
-  .resume-entry .entry-title { font-size: 1rem; font-weight: 600; color: var(--navy); }
-  .resume-entry .entry-sub { font-size: 0.88rem; color: var(--text-muted); margin: 0.15rem 0 0.5rem; }
+  .resume-entry .entry-title { font-size: 1.2rem; font-weight: 600; color: var(--navy); }
+  .resume-entry .entry-sub { font-size: 1.08rem; color: var(--text-muted); margin: 0.15rem 0 0.5rem; }
   .resume-entry ul { padding-left: 1.3rem; }
-  .resume-entry ul li { font-size: 0.92rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 0.2rem; }
+  .resume-entry ul li { font-size: 1.12rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 0.2rem; }
   .skills-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
-  .chip { font-size: 0.82rem; padding: 0.35rem 0.9rem; border: 1px solid var(--border); color: var(--text-mid); }
+  .chip { font-size: 1.05rem; padding: 0.35rem 0.9rem; border: 1px solid var(--border); color: var(--text-mid); }
 
   /* FOOTER */
   footer {
-    background: var(--navy); color: rgba(255,255,255,0.55);
-    text-align: center; padding: 2rem; font-size: 0.82rem; letter-spacing: 0.04em;
+    background-color: #0f2b4c;
+    background: #0f2b4c;
+    color: #ffffff;
+    text-align: center; padding: 2rem; font-size: 1rem; letter-spacing: 0.04em;
     border-top: 2px solid var(--accent);
   }
+  footer p { color: #ffffff !important; margin: 0; }
 
   @media (max-width: 640px) {
     nav { padding: 0 1rem; }
@@ -246,7 +248,7 @@
 <body>
 
 <nav id="navbar">
-  <div class="nav-name">[Your Name]</div>
+  <div class="nav-name">Kavitha Pannala</div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#philosophy">Philosophy</a>
@@ -260,8 +262,7 @@
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-tag">Professional Portfolio</div>
-  <h1>[Your Name]</h1>
-  <p class="hero-sub">Assistant Teacher in Training &nbsp;·&nbsp; Substitute Teacher</p>
+  <h1>Kavitha Pannala</h1>
   <p class="hero-desc">I believe every child deserves a classroom where they feel safe, seen, and genuinely excited to learn. That belief drives everything I do.</p>
   <div class="hero-btns">
     <a href="#about" class="btn-primary">Meet Me</a>
@@ -273,7 +274,7 @@
 <section id="about">
   <div class="container">
     <div class="section-label">About Me</div>
-    <h2>I came to teaching from a real place.</h2>
+    <h2>Teaching is something I genuinely love.</h2>
     <div class="divider"></div>
     <p class="lead">As a mom of two boys — one in high school, one in middle school — I've had a front-row seat to how kids grow and learn. I've watched them go from little ones figuring out letters and numbers to young people with real opinions and complex ideas.</p>
     <p>That experience taught me more about child development than any textbook could. I've seen firsthand how kids learn differently at different stages, what they need emotionally to feel safe enough to try, and how much one caring, steady adult in their life can mean.</p>
@@ -465,34 +466,21 @@
 <section id="portfolio">
   <div class="container">
     <div class="section-label">Portfolio</div>
-    <h2>Work from my training.</h2>
+    <h2>My Documents</h2>
     <div class="divider"></div>
-    <p class="lead">A collection of documents and reflections from my assistant teacher training — the actual work behind the thinking.</p>
 
     <div class="portfolio-cards">
-      <div class="portfolio-card" onclick="openPDF('docs/Classroom_Management_Plan.pdf','Classroom Management Plan')">
+      <div class="portfolio-card" onclick="openPDF('Classroom_Management_Plan.pdf','Classroom Management Plan')">
         <div class="card-icon">📋</div>
         <h3>Classroom Management Plan</h3>
-        <p>A full written plan covering room setup, daily routines, wall environment, attention signals, rules, rewards, and how I handle challenging behavior. Built around one belief: kids learn best when they feel safe and cared for.</p>
+        <p>A detailed plan covering room setup, daily routines, wall environment, attention signals, rules, and rewards — built around the belief that every child learns best in a safe, warm, and organized space.</p>
         <span class="card-tag">&#128065; View Document</span>
       </div>
-      <div class="portfolio-card" onclick="openPDF('docs/Lesson_Plan.pdf','Lesson Plan')">
+      <div class="portfolio-card" onclick="openPDF('Lesson_Plan.pdf','Lesson Plan')">
         <div class="card-icon">📝</div>
         <h3>Lesson Plan</h3>
-        <p>A complete lesson plan built around clear learning goals, hands-on or engaging activities, and check-ins throughout to make sure students are following along. Shows how I think from start to finish.</p>
+        <p>A complete lesson plan built around clear learning goals, engaging activities, and check-ins along the way to make sure every student is following along.</p>
         <span class="card-tag">&#128065; View Document</span>
-      </div>
-      <div class="portfolio-card" onclick="openPDF('docs/Resume.pdf','Resume')">
-        <div class="card-icon">📄</div>
-        <h3>Resume</h3>
-        <p>My full resume — covering my substitute teaching experience, education in progress, skills, and certifications.</p>
-        <span class="card-tag">&#128065; View Document</span>
-      </div>
-      <div class="portfolio-card">
-        <div class="card-icon">🔍</div>
-        <h3>Observations &amp; Reflections</h3>
-        <p>Written reflections from my time substituting across different classrooms and age groups — what I noticed, what worked, what I'd do differently, and what I'm learning about how children develop and engage.</p>
-        <span class="card-tag disabled">Coming Soon</span>
       </div>
     </div>
   </div>
@@ -555,43 +543,51 @@
 <section id="resume">
   <div class="container">
     <div class="section-label">Resume</div>
-    <h2>[Your Name]</h2>
+    <h2>Kavitha Pannala</h2>
     <div class="divider"></div>
-    <p style="margin-bottom:2.5rem; color: var(--text-muted); font-size:0.92rem;">[your.email@email.com] &nbsp;·&nbsp; [City, State] &nbsp;·&nbsp; [Phone Number]</p>
+    <p style="margin-bottom:2.5rem; color: var(--text-mid); font-size:1.05rem;">
+      pannala.kavitha@gmail.com &nbsp;·&nbsp; (646) 359-4252 &nbsp;·&nbsp; New Jersey
+    </p>
 
     <div class="resume-block">
       <h3>Objective</h3>
       <div class="resume-entry">
-        <p>Caring and organized educator in training, currently working as a substitute teacher across elementary school settings. Experienced in connecting with students of different ages and learning styles, maintaining classroom routines, and creating an environment where children feel safe, supported, and ready to learn. Working toward a full-time position in elementary education.</p>
+        <p>Caring and organized educator with hands-on classroom experience across elementary school settings. Passionate about building genuine connections with students, creating warm and structured learning environments, and supporting every child's growth. Seeking a full-time position in elementary education.</p>
       </div>
     </div>
 
     <div class="resume-block">
       <h3>Education</h3>
       <div class="resume-entry">
-        <div class="entry-title">[Degree or Program Name]</div>
-        <div class="entry-sub">[College or University Name] &nbsp;·&nbsp; Expected Graduation: [Year]</div>
-        <p style="font-size:0.9rem;">Coursework includes: Introduction to Teaching, Child Development, Classroom Management, Elementary Curriculum &amp; Instruction</p>
+        <div class="entry-title">Master of Computer Applications (MCA)</div>
+        <div class="entry-sub">Osmania University, India</div>
       </div>
     </div>
 
     <div class="resume-block">
       <h3>Experience</h3>
       <div class="resume-entry">
-        <div class="entry-title">Substitute Teacher</div>
-        <div class="entry-sub">[School District or School Name], [City, State] &nbsp;·&nbsp; [Start Date] – Present</div>
+        <div class="entry-title">Assistant Teacher</div>
+        <div class="entry-sub">Hillsborough School District, NJ &nbsp;·&nbsp; May 2025 – Present</div>
         <ul>
-          <li>Support learning across multiple classrooms and age groups on a regular basis</li>
-          <li>Build quick rapport with students and maintain a calm, structured presence from day one</li>
-          <li>Observe and adapt to varied classroom routines, management styles, and student needs</li>
-          <li>Gained practical understanding of how children learn and behave differently across developmental stages</li>
+          <li>Support classroom instruction across elementary school settings on a daily basis</li>
+          <li>Build strong relationships with students across different age groups and learning styles</li>
+          <li>Maintain a calm, structured, and welcoming classroom presence</li>
+          <li>Assist with lesson delivery, small group activities, and individual student support</li>
+          <li>Observe and adapt to varied classroom routines and student needs across multiple grade levels</li>
+          <li>Collaborate with lead teachers to ensure a positive and productive learning environment</li>
         </ul>
       </div>
       <div class="resume-entry">
-        <div class="entry-title">[Other Relevant Experience]</div>
-        <div class="entry-sub">[Organization or Context] &nbsp;·&nbsp; [Dates]</div>
+        <div class="entry-title">Quality Engineer</div>
+        <div class="entry-sub">2018 – 2025</div>
         <ul>
-          <li>Brief description of what you did and how it connects to working with or supporting kids</li>
+          <li>Designed and executed manual and automated test cases to ensure software quality across multiple product releases</li>
+          <li>Identified, documented, and tracked defects through full lifecycle using industry-standard bug tracking tools</li>
+          <li>Collaborated with developers, business analysts, and product owners to clarify requirements and acceptance criteria</li>
+          <li>Performed regression, functional, integration, and user acceptance testing across web and mobile platforms</li>
+          <li>Contributed to continuous improvement of QA processes, test documentation, and team workflows</li>
+          <li>Communicated testing status, risks, and results clearly to stakeholders at all levels</li>
         </ul>
       </div>
     </div>
@@ -599,32 +595,23 @@
     <div class="resume-block">
       <h3>Skills</h3>
       <div class="skills-chips">
-        <span class="chip">Positive classroom management</span>
+        <span class="chip">Classroom management</span>
         <span class="chip">Building student relationships</span>
         <span class="chip">Adapting to different environments</span>
         <span class="chip">Organized &amp; reliable</span>
         <span class="chip">Calm under pressure</span>
         <span class="chip">Family &amp; staff communication</span>
         <span class="chip">Child development knowledge</span>
-        <span class="chip">Flexible &amp; quick to adapt</span>
-      </div>
-    </div>
-
-    <div class="resume-block">
-      <h3>Certifications &amp; Training</h3>
-      <div class="resume-entry">
-        <ul>
-          <li>Assistant Teacher Program — [School/Program Name], [Year in progress]</li>
-          <li>Substitute Teacher Certification — [State/District], [Year]</li>
-          <li>[Any other training — CPR, first aid, etc.]</li>
-        </ul>
+        <span class="chip">Software quality assurance</span>
+        <span class="chip">Test planning &amp; execution</span>
+        <span class="chip">Attention to detail</span>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>[Your Name] &nbsp;·&nbsp; Assistant Teacher Portfolio &nbsp;·&nbsp; [Year]</p>
+  <p style="color:#ffffff !important; font-size:1rem;">Kavitha Pannala &nbsp;·&nbsp; Teaching Portfolio</p>
 </footer>
 
 <!-- PDF VIEWER MODAL -->
